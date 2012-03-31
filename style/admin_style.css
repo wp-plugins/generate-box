@@ -1,0 +1,37 @@
+/*
+File:			admin_style.css
+Description:	Custom style of Fake Traffic Bluster - admin page
+*/
+
+.clear { clear:both;}
+
+/* setting page */
+.ftblaster_admin {
+	float:right;
+	margin-left:20px;
+}
+.ftblaster_fb_rss li {
+	padding-left:22px;
+	background: transparent url(../images/fb.png) 0 -16px no-repeat;
+}
+.ftblaster_fb_rss li:hover {
+	background: transparent url(../images/fb.png) 0 0 no-repeat;
+}
+.ftblaster_admin_link {
+	margin-top:20px;
+}
+.ftblaster_admin_link li {
+	padding-left:22px;
+	background: transparent url(../images/stars.png) 0 -16px no-repeat;
+}
+.ftblaster_admin_link li:hover {
+	background: transparent url(../images/stars.png) 0 0 no-repeat;
+}
+li.ftblaster_paypal {
+	margin-top:20px;
+	padding-left:60px;
+	background: transparent url(../images/paypal.png) 0 -16px no-repeat;
+}
+li.ftblaster_paypal:hover {
+	background: transparent url(../images/paypal.png) 0 0 no-repeat;
+}

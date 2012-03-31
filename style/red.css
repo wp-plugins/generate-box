@@ -1,0 +1,195 @@
+/*
+File:			style.css
+Description:	Custom style of Generate Box plugin
+*/
+.clear {
+	clear:both;
+}
+
+/* Generate Box
+------------------------------------------------------------ */
+
+#generate_box {
+	background: transparent url(../images/box/shadow.png) no-repeat center bottom;
+	padding: 0 0 32px;
+}
+
+#generate_box .wrap {
+	-moz-box-shadow: 0 0 2px #999;
+	-webkit-box-shadow: 0 0 2px #999;
+	background: url(../images/box/generatebox-bg.png) repeat-x top #212121;
+	border: 1px solid #fff;
+	box-shadow: 0 0 2px #999;
+	clear: both;
+	color: #9f9f9f;
+	min-height: 195px;
+	margin: 2px auto 0;
+	padding: 30px;
+	text-shadow: -1px -1px #000;
+	width: 898px;
+}
+
+#generate_box .widget {
+	position: relative;
+}
+
+#generate_box p {
+	color: #9f9f9f;
+	text-shadow: -1px -1px #000;
+	margin: 0 0 15px;
+}
+
+#generate_box a:hover {
+	color: #fff;
+}
+
+#generate_box img.alignright {
+	position: absolute;
+	right: -30px;
+	top: 0;
+}
+
+#generate_box img.alignleft {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#generate_box form {
+	background: url(../images/box/arrow.png) no-repeat 40px 0;
+	display: block;
+	margin-top: 25px;
+	padding: 5px 0 0 150px;
+}
+
+#generate_box input {
+	font-family: 'Helvetica Neue',Arial,Tahoma,sans-serif;
+}
+
+#generate_box #mce-EMAIL,
+#generate_box input[type="text"] {	
+	-moz-border-radius: 5px;
+	-moz-box-shadow: inset 0 1px 2px 1px #eee;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: inset 0 1px 2px 1px #eee;
+	background-color: #fff;
+	border: 3px solid #000;
+	border-radius: 5px;
+	box-shadow: inset 0 1px 1px 1px #eee;
+	color: #777;
+	font-size: 16px;
+	padding: 12px 15px;
+	width: 250px;
+}
+
+#generate_box input[type="submit"] {
+	font-size: 16px;
+	padding: 11px 15px;
+}
+
+
+#generate_box input[type="button"], #generate_box input[type="submit"] {
+    background: url(../images/box/red/button.png) repeat-x scroll 0 0 #A81D1D;
+    border: 1px solid #820C0C;
+	border-radius: 3px 3px 3px 3px;
+	text-decoration: none;
+    color: white;
+	font-weight: bold;
+	text-shadow: -1px -1px #9E1717;
+	cursor: pointer;
+}
+
+#generate_box input:hover[type="button"],
+#generate_box input:hover[type="submit"] {
+	background: #b41c1c;
+}
+
+#generate_box h4 {
+	background: url(../images/box/red/generatebox-heading.png) no-repeat;
+	text-shadow: 1px 1px #661010;
+	color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    margin: -40px -72px 10px;
+    padding: 25px 30px 35px 60px;
+    text-shadow: 1px 1px #661010;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 600px) {
+	
+	#generate_box img.alignright {
+		display: none;
+	}
+
+	#generate_box {
+		padding: 0 0 12px;
+	}
+
+	#generate_box .wrap {
+		height: auto;
+		padding: 20px;
+		text-align: center;
+		width: auto;
+	}
+
+	.generate_red #generate_box h4 {
+		background: url(../images/box/red/generatebox-heading.png) no-repeat;
+		text-shadow: 1px 1px #134668;
+	}
+
+	#generate_box h4,
+	.generate_red #generate_box h4 {
+		background: none;
+		line-height: 40px;
+		margin: 0;
+		padding: 0;
+	}
+
+	#generate_box form {
+		background: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	#generate_box input[type="text"] {
+		text-align: center;
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+	#generate_box .wrap {
+		padding: 3.340757238307%;
+		width: 93.541666666667%
+	}
+
+	#generate_box h4 {
+		-moz-box-shadow: 0px 2px 5px #000;
+		-webkit-box-shadow: 0px 2px 5px #000;
+		background: #a61d1d url(../images/box/red/generatebox-heading-short.png) repeat-x;
+		box-shadow: 0px 2px 5px #000;
+		margin: -4.45434298441% -5% 0;
+		padding: 2.78396% 3.34076%;
+	}
+
+	.generate_red #generate_box h4 {
+		background: #1d6ea6 url(../images/box/red/generatebox-heading-short.png) repeat-x;
+	}
+
+	#generate_box img.alignright {
+		right: -36px;
+		top: 68px;
+   	 	width: 38%;
+	}
+
+	#generate_box p {
+		width: 70%;
+	}
+
+	#generate_box form {
+		background: url(../images/box/arrow.png) no-repeat 0 0;
+		padding: 5px 0 0 75px;
+	}
+}
