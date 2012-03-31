@@ -1,9 +1,9 @@
 === Generate Box ===
 Contributors: hishaman
 Donate link: http://generatebox.com/about/donate/
-Tags: genesis, generate, generate box, forms, optin form, email list, aweber, mailchip, getresponse, design, email, email sevices, emails, leads, lead generation, marketing, forms, form design
+Tags: genesis, generate, generate box, forms, optin form, email list, aweber, mailchip, getresponse, design, email, email sevices, emails, leads, lead generation, marketing, forms, form design, responsive
 Tested up to: 3.3
-Stable tag: 0.1
+Stable tag: 0.2
 
 More functionality for the StudioPress Generate Child Theme.
 
@@ -42,8 +42,11 @@ Contact us via http://generatebox.com/
 
 == Changelog ==
 
+= 0.2 =
+The generate box is now responsive.
+
 = 0.1 =
-First release
+First release.
 
 == Screenshots ==
 
@@ -52,5 +55,5 @@ First release
 
 == Upgrade Notice ==
 
-= 0.1 =
-Add more functionality to the StudioPress Generate Child Theme.
+= 0.2 =
+Fixed CSS styles to make the generate box responsive, please upgrade now.

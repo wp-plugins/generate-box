@@ -115,3 +115,80 @@ Description:	Custom style of Generate Box plugin
     text-shadow: 1px 1px #661010;
     text-transform: uppercase;
 }
+
+@media only screen and (max-width: 600px) {
+	
+	#generate_box img.alignright {
+		display: none;
+	}
+
+	#generate_box {
+		padding: 0 0 12px;
+	}
+
+	#generate_box .wrap {
+		height: auto;
+		padding: 20px;
+		text-align: center;
+		width: auto;
+	}
+
+	.generate_blue #generate_box h4 {
+		background: url(../images/box/blue/generatebox-heading.png) no-repeat;
+		text-shadow: 1px 1px #134668;
+	}
+
+	#generate_box h4,
+	.generate_blue #generate_box h4 {
+		background: none;
+		line-height: 40px;
+		margin: 0;
+		padding: 0;
+	}
+
+	#generate_box form {
+		background: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	#generate_box input[type="text"] {
+		text-align: center;
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+	#generate_box .wrap {
+		padding: 3.340757238307%;
+		width: 93.541666666667%
+	}
+
+	#generate_box h4 {
+		-moz-box-shadow: 0px 2px 5px #000;
+		-webkit-box-shadow: 0px 2px 5px #000;
+		background: #a61d1d url(../images/box/blue/generatebox-heading-short.png) repeat-x;
+		box-shadow: 0px 2px 5px #000;
+		margin: -4.45434298441% -5% 0;
+		padding: 2.78396% 3.34076%;
+	}
+
+	.generate_blue #generate_box h4 {
+		background: #1d6ea6 url(../images/box/blue/generatebox-heading-short.png) repeat-x;
+	}
+
+	#generate_box img.alignright {
+		right: -36px;
+		top: 68px;
+   	 	width: 38%;
+	}
+
+	#generate_box p {
+		width: 70%;
+	}
+
+	#generate_box form {
+		background: url(../images/box/arrow.png) no-repeat 0 0;
+		padding: 5px 0 0 75px;
+	}
+}
