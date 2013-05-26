@@ -355,17 +355,9 @@ function generatebox_theme_options_page() {
 
 			
 
-			<h2>
-
-				<?php _e( 'Generate Box Settings', 'genesis' ); ?>
-
-				<input type="submit" class="button-primary genesis-h2-button" value="<?php _e( 'Save Settings', 'genesis' ) ?>" />
-
-				<input type="submit" class="button-highlighted genesis-h2-button" name="<?php echo generatebox_SETTINGS_FIELD; ?>[reset]" value="<?php _e( 'Reset Settings', 'genesis' ); ?>" onclick="return genesis_confirm('<?php echo esc_js( __( 'Are you sure you want to reset?', 'genesis' ) ); ?>');" />
-
-			</h2>
-
-		
+			<h2><?php _e( 'Generate Box Settings', 'genesis' ); ?></h2>
+            
+            <p class="top-buttons"><input type="submit" class="button button-primary" value="<?php _e( 'Save Settings', 'genesis' ) ?>" /></p>
 
 			<div class="metabox-holder">
 
@@ -377,7 +369,6 @@ function generatebox_theme_options_page() {
 
 			</div>
 
-		
 
 		</form>
 

@@ -3,22 +3,21 @@
 	Plugin Name: Generate Box
     Plugin URI: http://generatebox.com/
     Description: Add more functionality to Generate Child Theme and Genesis framework from StudioPress. 
-    Version: 0.2
+    Version: 0.3
     Author: Hesham Zebida
     Author URI: http://zebida.com
-    Last Version update : 31 March 2012
+    Last Version update : 26 May 2013
     */
 	
     $generatebox_plugin_url = trailingslashit ( WP_PLUGIN_URL . '/' . dirname ( plugin_basename ( __FILE__ ) ) );
-	$generatebox_plugin_version = '0.2';
+	$generatebox_plugin_version = '0.3';
 	$shortname = "generatebox";
 			
 	// set up plugin actions
     //add_action( 'admin_init', 'generatebox_requires_wordpress_version' );				// check WP version 3.0+
 	register_activation_hook( __FILE__, 'generatebox_activation_check' );				// genesis activation check
 	add_action( 'admin_init', 'generatebox_admin_init' );								// to register admin styles and scripts
-	//add_action( 'wp_enqueue_scripts', 'generatebox_scripts_method' );					// to register scripts
-	add_action( 'wp_enqueue_scripts', 'generatebox_add_my_stylesheet' );				// load css
+	add_action( 'genesis_init', 'generatebox_add_my_stylesheet', 15 );
 	
 	//requires
 	require_once ('include/admin.php');												// load admin page
